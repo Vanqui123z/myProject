@@ -13,7 +13,8 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use('/api/schedules', scheduleRoutes); // Đảm bảo route đúng
+app.use('/api/schedules', scheduleRoutes);
+// Đảm bảo route đúng
 
 // Kết nối MongoDB
 mongoose.connect(process.env.MONGO_URI)
