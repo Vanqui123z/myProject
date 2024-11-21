@@ -7,7 +7,7 @@ import ScheduleView from "./components/ScheduleView";
 const App = () => {
   return (
     <div>
-      <h1>Lịch học, lịch thi</h1>
+      <h1 className='m-3'>Lịch học, lịch thi</h1>
       <ScheduleView />
     </div>
   );

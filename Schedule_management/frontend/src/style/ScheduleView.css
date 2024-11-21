@@ -210,3 +210,5 @@ body {
 .actions button:last-child {
   background-color: #dc3545;
 }
+
+.none{display: none;}

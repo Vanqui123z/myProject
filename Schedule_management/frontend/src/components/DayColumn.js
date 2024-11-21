@@ -1,6 +1,7 @@
 import React from "react";
 
 const DayColumn = ({ schedules, onDelete, onEdit }) => {
+  // console.log(schedules)
   return (
     <div className="day-column">
       <div className="sessions">
@@ -11,8 +12,8 @@ const DayColumn = ({ schedules, onDelete, onEdit }) => {
               <p>Phòng: {schedule.classroom}</p>
               <p>Tiết: {schedule.classPeriod}</p>
               <p>GV: {schedule.teacher}</p>
-              <button onClick={() => onEdit(schedule)}>Sửa</button>
-              <button onClick={() => onDelete(schedule._id)}>Xóa</button>
+              <button className="btn btn-success m-2" onClick={() => onEdit(schedule)}>Sửa</button>
+              <button className="btn btn-success m-2" onClick={() => onDelete(schedule._id)}>Xóa</button>
             </div>
           ))
         ) : (

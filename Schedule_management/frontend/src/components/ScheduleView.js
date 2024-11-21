@@ -114,7 +114,7 @@ const ScheduleView = () => {
               {groupedSchedules.map((group, index) => (
                 <th key={index}>
                   <span>{group.dayOfWeek}</span><br />
-                  {getDateForDayOfWeek(index + 1)}
+                  {group.date}
                 </th>
               ))}
             </tr>
@@ -125,13 +125,10 @@ const ScheduleView = () => {
                 <td className="ses"><b>{session}</b></td>
                 {groupedSchedules.map((group, index) => (
                   <td key={`${group.dayOfWeek}-${session}`}>
-                    <DayColumn          
-                    schedules={group.schedules.filter(
-                        (schedule) => normalizeSession(schedule.session) === session
-                      )}
-                    onEdit={handleEditSchedule}
-                    onDelete={handleDeleteSchedule}
-                       
+                    <DayColumn
+                      schedules={group.schedules.filter((schedule) => normalizeSession(schedule.session) === session)} 
+                      onEdit={handleEditSchedule}
+                      onDelete={handleDeleteSchedule}
                     />
                   </td>
                 ))}
