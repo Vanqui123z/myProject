@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caculator {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: bisque;
+  border: 1px gray solid;
+
+}
+
+.display {
+  height: 100px;
+  padding: 20px;
+  margin: 20px;
+  background-color: aqua;
+  border-radius: 5px;
+  position: relative;
+  border: 1px gray solid;
+}
+
+.displayResult {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+  
+}
+.keyboard {
+    background-color: rgb(194, 196, 197);
+    padding: 10px;
+  }
+table th{
+    color: black;
+    text-align: center;
+    width:100%;
+    padding: 2px;
+}
+table button{
+    background-color: rgb(61, 63, 63);
+    width: 70px;height: 40px;
+    cursor: pointer;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px gray;
+    color: white;
+}

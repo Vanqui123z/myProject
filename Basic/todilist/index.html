@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png/jpg" href="./icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todolist</title>
+  </head>
+
+  <body>
+    <div class="container mb-5">
+      <h1 class="text-center">Todolist</h1>
+      <nav class="navbar navbar-expand-lg">
+        <button
+          class="navbar-toggler btn-dark text-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#toogleSceen"
+          aria-controls="toogleSceen"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toogleSceen">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="fa-solid fa-list"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="fa-regular fa-clock"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="fa-regular fa-bell"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="fa-regular fa-user"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="fa-regular fa-square-plus"></i
+              ></a>
+            </li>
+          </ul>
+          <!-- toggle dark -->
+          <label class="toggle_switch my-2 my-lg-0 m-5">
+            <input type="checkbox" id="toggleMode" />
+            <span class="slider"></span>
+          </label>
+         
+          
+          <!-- toggle daily -->
+          <div class="toggle_regime ">
+            <label  class="btn_regime daily" data-target="#carousel_List" data-slide-to="0">
+              <input type="radio" name="regime" value="daily" checked>
+              <span >daily</span>
+            </label>
+            <label  class="btn_regime monthly" data-target="#carousel_List" data-slide-to="1">
+              <input type="radio" name="regime" value="monthly">
+              <span >monthly</span>
+            </label>
+          </div>
+        </div>
+        
+      </nav>
+      <!-- calender -->
+      <div class="calender">
+        <h2 class="text-center" id="calender_title"></h2>
+        <table class="table table-bordered calender_table">
+          <thead>
+            <tr>
+              <th>CN</th>
+              <th>T2</th>
+              <th>T3</th>
+              <th>T4</th>
+              <th>T5</th>
+              <th>T6</th>
+              <th>T7</th>
+              
+            </tr>
+          </thead>
+          <tbody id="calendar_body">
+
+          </tbody>
+        </table>
+      </div>
+
+
+      <div id="carousel_List" class="carousel slide" >
+        
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+              <!-- list day-->
+            <div class="list">
+              <h1 id="dayList"></h1>
+              <ul class="list-group">
+                <li class="list-group-item mt-3">
+                  <div class="itemGroupList">
+                    <div class="list">
+                      <i class="fa-regular fa-circle-check mr-2"></i>
+                      <span>text</span>
+                    </div>
+                    <div class="dateList">
+                      <span id="date mr-2">12/1</span> -
+                      <span id="time">12:12</span>
+                    </div>
+      
+                  </div>
+                </li>
+                <li class="list-group-item mt-3">
+                  <div class="itemGroupList">
+                    <div class="list">
+                      <i class="fa-regular fa-circle-check mr-2"></i>
+                      <span>text</span>
+                    </div>
+                    <div class="dateList">
+                      <span id="date mr-2">12/1</span> -
+                      <span id="time">12:12</span>
+                    </div>
+      
+                  </div>
+                </li>
+                <li class="list-group-item mt-3">
+                  <div class="itemGroupList">
+                    <div class="list">
+                      <i class="fa-regular fa-circle-check mr-2"></i>
+                      <span>text</span>
+                    </div>
+                    <div class="dateList">
+                      <span id="date mr-2">12/1</span> -
+                      <span id="time">12:12</span>
+                    </div>
+      
+                  </div>
+                </li>
+              </ul>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <!-- List month -->
+            <div class="list">
+              <h1>This Month</h1>
+              <h4>Thứ 3, ngày 04/11/2024</h4>
+              <ul class="list-group">
+                <li class="list-group-item mt-3">
+                  <div class="itemGroupList">
+                    <div class="list">
+                      <i class="fa-regular fa-circle-check mr-2"></i>
+                      <span>text</span>
+                    </div>
+                    <div class="dateList">
+                      <span id="date mr-2">12/1</span> -
+                      <span id="time">12:12</span>
+                    </div>
+      
+                  </div>
+                </li>
+                <li class="list-group-item mt-3">
+                  <div class="itemGroupList">
+                    <div class="list">
+                      <i class="fa-regular fa-circle-check mr-2"></i>
+                      <span>text</span>
+                    </div>
+                    <div class="dateList">
+                      <span id="date mr-2">12/1</span> -
+                      <span id="time">12:12</span>
+                    </div>
+      
+                  </div>
+                </li>
+                <li class="list-group-item mt-3">
+                  <div class="itemGroupList">
+                    <div class="list">
+                      <i class="fa-regular fa-circle-check mr-2"></i>
+                      <span>text</span>
+                    </div>
+                    <div class="dateList">
+                      <span id="date mr-2">12/1</span> -
+                      <span id="time">12:12</span>
+                    </div>
+      
+                  </div>
+                </li>
+              </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
