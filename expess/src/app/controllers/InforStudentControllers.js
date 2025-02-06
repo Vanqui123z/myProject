@@ -16,6 +16,7 @@ class InforStudentControllers{
             
         }
     }
+    
 }
 
 module.exports = new InforStudentControllers;

@@ -7,7 +7,8 @@ function route(app) {
     app.use('/form', formRouter);
     app.use('/news', newsRouter); 
     app.use('/student', studentRouter); 
+    app.get('/:query', SiteController.search); 
     app.get('/', SiteController.index); 
+    
 }
-
 module.exports = route;

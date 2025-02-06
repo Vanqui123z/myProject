@@ -1,9 +1,9 @@
 <div class="container"> 
     <!-- Form Tìm kiếm -->
-    <form action="" method="GET">
+    <form action="/student" method="GET">
         <div class="form-group">
-            <label for="khoahoc">Tìm kiếm khóa học:</label>
-            <input type="text" class="form-control form-control-sm" name="khoahoc" id="khoahoc" aria-describedby="helpId" placeholder="Nhập môn học cần tìm">
+            <label for="sinhvien">Tìm kiếm sinh vien:</label>
+            <input type="text" class="form-control form-control-sm" name="sinhvien" id="sinhvien" aria-describedby="helpId" placeholder="Nhập sinh vien cần tìm">
             <button type="submit" class="btn btn-primary mt-2">Tìm kiếm</button>
         </div>
     </form>
@@ -16,6 +16,8 @@
                     <h4><%= point.name %></h4>  
                     <!-- Nút xóa -->
                     <a type="button" class="btn-danger position-absolute closeButton nav-link" aria-label="Close" onclick="submitDeleteForm('<%= point.name %>')">x</a>
+                    <!-- Nút sửa -->
+                    <a type="button" class="btn-warning position-absolute editButton nav-link" aria-label="Edit" href="/form/edit/<%= point.name %>" ><i class="bi bi-pencil"></i></a>
                     <p><strong>Toán:</strong> <%= point.math %></p>
                     <p><strong>Văn:</strong> <%= point.liter %></p>
                     <p><strong>Anh:</strong> <%= point.eng %></p>
@@ -23,10 +25,11 @@
                 </div>
             <% }); %>
 
-            <!-- Nút Add và Delete -->
+            <!-- Nút Add và Delete và EditEdit-->
             <div class="list-group-item d-flex justify-content-center align-items-center flex-column">
                 <a class="btn btn-warning" href="/form">Add</a>
                 <a class="btn btn-danger mt-2" id="delete">Delete</a>
+                <a class="btn btn-warning mt-2" id="edit">Edit</a>
             </div>
         </div>
     </div>
@@ -34,12 +37,17 @@
 
 <!-- Form Ẩn để gửi yêu cầu DELETE -->
 <form id="deleteForm"  method="POST" style="display:none;">
-    <input type="hidden" name="_metEhod" value="DELET">
+    <input type="hidden" name="_method" value="Delete">
 </form>
 
 <script>
     // Hàm gửi form xóa khi nhấn vào nút "x"
     function submitDeleteForm(courseName) {
         $('#deleteForm').attr('action', '/form/delete/' + encodeURIComponent(courseName));
-        $('#deleteForm').submit();     }
+        $('#deleteForm').submit();
+    }
+
+ 
+
+
 </script>
