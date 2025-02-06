@@ -1,0 +1,45 @@
+<div class="container"> 
+    <!-- Form Tìm kiếm -->
+    <form action="" method="GET">
+        <div class="form-group">
+            <label for="khoahoc">Tìm kiếm khóa học:</label>
+            <input type="text" class="form-control form-control-sm" name="khoahoc" id="khoahoc" aria-describedby="helpId" placeholder="Nhập môn học cần tìm">
+            <button type="submit" class="btn btn-primary mt-2">Tìm kiếm</button>
+        </div>
+    </form>
+   
+    <!-- Danh sách các khóa học -->
+    <div class="row row-offcanvas row-offcanvas-right ">
+        <div class="list-group flex-wrap">
+            <% points.forEach(function(point) { %>
+                <div class="list-group-item position-relative ">
+                    <h4><%= point.name %></h4>  
+                    <!-- Nút xóa -->
+                    <a type="button" class="btn-danger position-absolute closeButton nav-link" aria-label="Close" onclick="submitDeleteForm('<%= point.name %>')">x</a>
+                    <p><strong>Toán:</strong> <%= point.math %></p>
+                    <p><strong>Văn:</strong> <%= point.liter %></p>
+                    <p><strong>Anh:</strong> <%= point.eng %></p>
+                    <a class="btn btn-primary" href="/student/inf?name=<%= encodeURIComponent(point.name) %>">Xem thêm</a>
+                </div>
+            <% }); %>
+
+            <!-- Nút Add và Delete -->
+            <div class="list-group-item d-flex justify-content-center align-items-center flex-column">
+                <a class="btn btn-warning" href="/form">Add</a>
+                <a class="btn btn-danger mt-2" id="delete">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Form Ẩn để gửi yêu cầu DELETE -->
+<form id="deleteForm"  method="POST" style="display:none;">
+    <input type="hidden" name="_metEhod" value="DELET">
+</form>
+
+<script>
+    // Hàm gửi form xóa khi nhấn vào nút "x"
+    function submitDeleteForm(courseName) {
+        $('#deleteForm').attr('action', '/form/delete/' + encodeURIComponent(courseName));
+        $('#deleteForm').submit();     }
+</script>

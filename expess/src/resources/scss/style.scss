@@ -1,0 +1,25 @@
+$primary-color: white;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-color;
+  h1 {
+    text-align: center;
+    color:blue;
+  }
+  .list-group{
+    flex-direction: row;
+  }
+  img{
+    height: 60vh;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+}
+.closeButton{
+  top: 0px;
+  right: 0px;
+  border-radius: 50%;
+  padding: 0px 5px;
+  display: none;
+}
