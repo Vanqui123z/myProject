@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Boostrap_Jquery/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../../Synthetic/Synthetic.css">
+    <script src="../../Boostrap_Jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../Boostrap_Jquery/bootstrap.min.js"></script>
+    <script async src="./index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        [class=col] {
+            margin: 0;
+            padding: 0;
+        }
+
+        [class=row] {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <header id="header"></header>
+    <main id="main">
+
+
+        <div id="carouselId" class="carousel slide" data-ride="carousel" >
+            <ol class="carousel-indicators">
+                <li class="bg-dark" data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li class="bg-dark" data-target="#carouselId" data-slide-to="1"></li>
+                <li class="bg-dark" data-target="#carouselId" data-slide-to="2"></li>
+            </ol>
+            <div style=" width:100%" class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="../../Img/bìa_trangThietBiYTe.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../Img/bìa_trangThietBiYTe2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../Img/bìa_trangThietBiYTe3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="bg-dark sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="bg-dark sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="vochers">
+            <div class="title">
+                <h3>ƯU ĐÃI DÀNH CHO BẠN</h3>
+            </div>
+            <div class="content row">
+
+                <div class="vocher col">
+                    <div class="row ">
+                        <span class="sign col-4"><span>W10</span></span>
+                        <div class="content_vorcher col-8">
+                            <div class="quantily">
+                                <span>Giảm 10K</span>
+                                <p>đơn từ 99K (số lượng có hạn)</p>
+                            </div>
+                            <div class="information">
+                                <div class="information_vorcher">
+                                    <span>Mã: </span>
+                                    <span class="sign_number content_vorcher_mini">W10</span>
+                                    <p>HSD: 25/01/2023</p>
+                                </div>
+                                <span id="nameVorcher" hidden>W10</span>
+                                <button class="btn btn-dark copyVorcher">Sao chép mã</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vocher col">
+                    <div class="row ">
+                        <span class="sign col-4"><span>W12</span></span>
+                        <div class="content_vorcher col-8">
+                            <div class="quantily">
+                                <span>Giảm 10K</span>
+                                <p>đơn từ 99K (số lượng có hạn)</p>
+                            </div>
+                            <div class="information">
+                                <div class="information_vorcher">
+                                    <span>Mã: </span>
+                                    <span class="sign_number content_vorcher_mini">W12</span>
+                                    <p>HSD: 25/01/2023</p>
+                                </div>
+                                <span id="nameVorcher" hidden>W12</span>
+                                <button class="btn btn-dark copyVorcher">Sao chép mã</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vocher col">
+                    <div class="row ">
+                        <span class="sign col-4"><span>M20</span></span>
+                        <div class="content_vorcher col-8">
+                            <div class="quantily">
+                                <span>Giảm 20K</span>
+                                <p>đơn từ 99K (số lượng có hạn)</p>
+                            </div>
+                            <div class="information">
+                                <div class="information_vorcher">
+                                    <span>Mã: </span>
+                                    <span class="sign_number content_vorcher_mini">M20</span>
+                                    <p>HSD: 25/01/2023</p>
+                                </div>
+                                <span id="nameVorcher" hidden>M20</span>
+                                <button class="btn btn-dark copyVorcher">Sao chép mã</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vocher col">
+                    <div class="row ">
+                        <span class="sign col-4"><span>Y30</span></span>
+                        <div class="content_vorcher col-8">
+                            <div class="quantily">
+                                <span>Giảm 30K</span>
+                                <p>đơn từ 99K (số lượng có hạn)</p>
+                            </div>
+                            <div class="information">
+                                <div class="information_vorcher">
+                                    <span>Mã: </span><br>
+                                    <span class="sign_number content_vorcher_mini">Y30</span>
+                                    <p>HSD: 25/01/2023</p>
+                                </div>
+                                <span id="nameVorcher" hidden>Y30</span>
+                                <button class="btn btn-dark copyVorcher">Sao chép mã</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+        <div class="flashSale">
+            <div class="flashSale_header">
+                <div class="title">
+                    <i style="color: #f4dd0b; text-shadow: 1px 1px 0.5px black" class="fa-solid fa-bolt-lightning"></i>
+                    <h3>FLASH SALE</h3>
+                </div>
+                <div class="time">
+                    <div class="item daySale">
+                        <b >00</b><br><span>Ngày</span>
+                    </div>
+                    <div class="item hourSale">
+                        <b id="hours" ></b><br><span>Giờ</span>
+                    </div>
+                    <div class="item minSale">
+                        <b id="minutes"></b><br><span>Phút</span>
+                    </div>
+                    <div class="item secSale">
+                        <b id="seconds"></b><br><span>Giây</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="item sp1">
+                    <div class="content">
+                        <div class="img">
+                            <span class="percent">24%</span>
+                            <img src="../../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy đo huyết áp giọng nói cuff 360 YE670CR</p>
+                        </div>
+                        <div class="price">
+                            <span class="priceSale">1,400,000₫</span>
+                            <span class="cost">1,090,000₫</span><br>
+                        </div>
+                        <div class="progress d-block">
+                            <div class="title">
+                                <i class="fa-solid fa-fire" style="color: #ff0000;"></i>
+                                <span>Đang bán chạy</span>
+                            </div>
+                            <div class="runningBar">
+                                <div class="runningBar_inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp2">
+                    <div class="content">
+                        <div class="img">
+                            <span class="percent">24%</span>
+                            <img src="../../Img/Nhiệt Kế Hồng Ngoại Yuwell YT-1C.webp" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Nhiệt Kế Hồng Ngoại Yuwell YT-1C</p>
+                        </div>
+                        <div class="price">
+                            <b><span class="priceSale">749,000₫</span>
+                                <span class="cost">900,000₫</span></b>
+                        </div>
+                        <div class="progress d-block">
+                            <div class="title">
+                                <i class="fa-solid fa-fire" style="color: #ff0000;"></i>
+                                <span>Đang bán chạy</span>
+                            </div>
+                            <div class="runningBar">
+                                <div class="runningBar_inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp3" >
+                    <div class="content">
+                        <div class="img">
+                            <span class="percent">24%</span>
+                            <img src="../../Img/Máy Xông Khí Dung Cầm Tay M102 ( Dạng Lưới ).webp" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy Xông Khí Dung Cầm Tay M102 ( Dạng Lưới )</p>
+                        </div>
+                        <div class="price">
+                            <b><span class="priceSale">899,000₫</span>
+                                <span class="cost">1,300,000₫</span></b>
+                        </div>
+                        <div class="progress d-block">
+                            <div class="title d-block">
+                                <i class="fa-solid fa-fire" style="color: #ff0000;"></i>
+                                <span>Đang bán chạy</span>
+                            </div>
+                            <div class="runningBar">
+                                <div class="runningBar_inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp4">
+                    <div class="content">
+                        <div class="img">
+                            <span class="percent">24%</span>
+                            <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy Xông Khí Dung Cầm Tay M103 (Dạng lưới)</p>
+                        </div>
+                        <div class="price">
+                            <b><span class="priceSale">1,200,000₫</span>
+                                <span class="cost">1,300,000₫</span></b>
+                        </div>
+                        <div class="progress d-block">
+                            <div class="title">
+                                <i class="fa-solid fa-fire" style="color: #ff0000;"></i>
+                                <span>Đang bán chạy</span>
+                            </div>
+                            <div class="runningBar">
+                                <div class="runningBar_inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp5">
+                    <div class="content">
+                        <div class="img">
+                            <span class="percent">24%</span>
+                            <img src="../../Img/Máy Đo Huyết Áp YE8600A.webp" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy Đo Huyết Áp YE660E - Tặng Nhiệt Kế YT-1C trị giá 750.000</p>
+                        </div>
+                        <div class="price">
+                            <b><span class="priceSale">899,000₫</span>
+                                <span class="cost">1,150,000₫</span></b>
+                        </div>
+                        <div class="progress d-block">
+                            <div class="title">
+                                <i class="fa-solid fa-fire" style="color: #ff0000;"></i>
+                                <span>Đang bán chạy</span>
+                            </div>
+                            <div class="runningBar">
+                                <div class="runningBar_inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="watchAll">
+                <a href="../Sale/index.html">
+                    <button>Xem tất cả »</button>
+                </a>
+            </div>
+        </div>
+
+        </div>
+        <div class="allProduct">
+            <div class="header row">
+                <button class="active" disabled>HÀNG MỚI</button>
+            </div>
+            <div class="container">
+                <div class="item sp1">
+                    <div class="content">
+                        <div class="img">
+                            <img src="../../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy đo huyết áp giọng nói cuff 360 YE670CR</p>
+                        </div>
+                        <div class="price">
+                            <span>1,090,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp2">
+                    <div class="content">
+                        <div class="img">
+                            <img src="../../Img/Nhiệt Kế Hồng Ngoại Yuwell YT-1C.webp" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Nhiệt Kế Hồng Ngoại Yuwell YT-1C</p>
+                        </div>
+                        <div class="price">
+                            <span>749,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp3">
+                    <div class="content">
+                        <div class="img">
+                            <img src="../../Img/Máy Xông Khí Dung Cầm Tay M102 ( Dạng Lưới ).webp" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy Xông Khí Dung Cầm Tay M102 ( Dạng Lưới )</p>
+                        </div>
+                        <div class="price">
+                            <span>899,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp4">
+                    <div class="content">
+                        <div class="img">
+                            <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy tạo oxy 7F-3E(W)</p>
+                        </div>
+                        <div class="price">
+                            <span>749,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp5">
+                    <div class="content">
+                        <div class="img">
+                            <img src="../../Img/Máy Tạo Oxy Yuwell 9F-3AW.png" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy Xông Khí Dung Cầm Tay M103 (Dạng lưới)</p>
+                        </div>
+                        <div class="price">
+                            <span>1,200,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp6">
+                    <div class="content">
+                        <div class="img">
+                            <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy Xông Khí Dung Siêu Âm 402B</p>
+                        </div>
+                        <div class="price">
+                            <span>1,350,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp7">
+                    <div class="content">
+                        <div class="img">
+                            <img src="../../Img//Máy Xông Khí Dung Nén Khí 405B.webp" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy Xông Khí Dung Nén Khí 405B</p>
+                        </div>
+                        <div class="price">
+                            <span>960,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp8">
+                    <div class="content">
+                        <div class="img">
+                            <img src="../../Img/Máy Đo Huyết Áp YE8900A.webp" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy đo huyết áp giọng nói cuff 360 YE670CR</p>
+                        </div>
+                        <div class="price">
+                            <span>1,090,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp9">
+                    <div class="content">
+                        <div class="img">
+                            <img src="../../Img/Máy Tạo Oxy Yuwell 8F-3AW.jpg" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy Tạo Oxy Yuwell 8F-3AW</p>
+                        </div>
+                        <div class="price">
+                            <span>1,120,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item sp10">
+                    <div class="content">
+                        <div class="img">
+                            <img src="../../Img/Máy Đo Huyết Áp YE660E - Tặng Nhiệt Kế YT-1C trị giá 750.000.webp" alt="">
+                            <span><i style="font-size:small;" class="fa-solid fa-bag-shopping"></i></span>
+                        </div>
+                        <div class="title">
+                            <p>Máy Đo Huyết Áp YE660E - Tặng Nhiệt Kế YT-1C trị giá 750.000</p>
+                        </div>
+                        <div class="price">
+                            <span>1,550,000₫</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer m-5">
+
+            </div>
+        </div>
+
+        <!-- tableContent -->
+        <div class="tableContent">
+
+            <!-- item_wrapper1 -->
+            <div class="item_wrapper">
+                <div class="header">
+                    <div class="title">Máy đo huyết áp</div>
+                    <div class="watchAll">
+                        <a href="../DanhMuc/MayDoHuyetAp/index.html"><button>Xem tất cả »</button></a>
+                    </div>
+                </div>
+                <div id="carousel-tableContent" class="carousel slide">
+                    <div class="carousel-inner" role="listbox">
+                        <!-- carousel-item -->
+                        <div class="carousel-item active">
+                            <div class="containerWapper">
+                                <div class="containerItem">
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy đo huyết áp giọng nói cuff 360 YE670CR</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>1,090,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Đo Huyết Áp YE660E - Tặng Nhiệt Kế YT-1C trị giá 750.000.webp"
+                                                    alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Đo Huyết Áp YE660E-Tặng Nhiệt Kế</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>749,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="footer">
+                                    <div class="transition_button">
+                                        <ol class="carousel-indicators m-0">
+                                            <li data-target="#carousel-tableContent" class="toggle_button"
+                                                data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-tableContent" class="toggle_button"
+                                                data-slide-to="1"></li>
+                                            <li data-target="#carousel-tableContent" class="toggle_button"
+                                                data-slide-to="2"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-item -->
+                        <div class="carousel-item">
+                            <div class="containerWapper">
+
+                                <div class="containerItem">
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Quần Jeans ICONDENIM Blue Wash - Form
+                                                    Slim</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>550,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Đo Huyết Áp YE8900A.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy đo huyết áp YE650A</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>749,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="transition_button">
+                                        <ol class="carousel-indicators m-0">
+                                            <li data-target="#carousel-tableContent" class="toggle_button"
+                                                data-slide-to="0"></li>
+                                            <li data-target="#carousel-tableContent" class="toggle_button active"
+                                                data-slide-to="1"></li>
+                                            <li data-target="#carousel-tableContent" class="toggle_button"
+                                                data-slide-to="2"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-item -->
+                        <div class="carousel-item">
+                            <div class="containerWapper">
+
+                                <div class="containerItem">
+
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Đo Huyết Áp YE8900A.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Đo Huyết Áp YE650D</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>550,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Đo Huyết Áp YE8600A.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Đo Huyết Áp YE660B</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>559,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="transition_button">
+                                        <ol class="carousel-indicators m-0">
+                                            <li data-target="#carousel-tableContent" class="toggle_button"
+                                                data-slide-to="0"></li>
+                                            <li data-target="#carousel-tableContent" class="toggle_button"
+                                                data-slide-to="1"></li>
+                                            <li data-target="#carousel-tableContent" class="toggle_button active"
+                                                data-slide-to="2"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- item_wrapper2 -->
+
+            <div class="item_wrapper">
+                <div class="header">
+                    <div class="title">Máy đo đường huyết</div>
+                    <div class="watchAll">
+                        <a href="../DanhMuc/MayDoDuongHuyet/index.html">
+                            <button>Xem tất cả »</button>
+                        </a>
+                    </div>
+                </div>
+                <div id="carousel-tableContent2" class="carousel slide">
+                    <div class="carousel-inner" role="listbox">
+                        <!-- carousel-item -->
+                        <div class="carousel-item active">
+                            <div class="containerWapper">
+                                <div class="containerItem">
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy đo đường huyết 582.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy đo đường huyết 582</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>330,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy đo đường huyết 590.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy đo đường huyết 590</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>540,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="footer">
+                                    <div class="transition_button">
+                                        <ol class="carousel-indicators m-0">
+                                            <li data-target="#carousel-tableContent2" class="toggle_button"
+                                                data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-tableContent2" class="toggle_button"
+                                                data-slide-to="1"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-item -->
+                        <div class="carousel-item">
+                            <div class="containerWapper">
+
+                                <div class="containerItem">
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Đo Đường Huyết Accusmart 710.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Đo Đường Huyết Accusmart 710</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>558,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="footer">
+                                    <div class="transition_button">
+                                        <ol class="carousel-indicators m-0">
+                                            <li data-target="#carousel-tableContent2" class="toggle_button"
+                                                data-slide-to="0"></li>
+                                            <li data-target="#carousel-tableContent2" class="toggle_button active"
+                                                data-slide-to="1"></li>
+
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-item -->
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- item_wrapper3 -->
+
+            <div class="item_wrapper">
+                <div class="header">
+                    <div class="title">Máy tạo oxi</div>
+                    <div class="watchAll">
+                        <a href="../DanhMuc/MayTaoOxi/index.html">
+                            <button>Xem tất cả »</button>
+                        </a>
+                    </div>
+                </div>
+                <div id="carousel-tableContent3" class="carousel slide">
+                    <div class="carousel-inner" role="listbox">
+                        <!-- carousel-item -->
+                        <div class="carousel-item active">
+                            <div class="containerWapper">
+                                <div class="containerItem">
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Tạo Oxy Yuwell 9F-3AW</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>250,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy tạo oxy 9F-3BW.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy tạo oxy 9F-3BW</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>550,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="footer">
+                                    <div class="transition_button">
+                                        <ol class="carousel-indicators m-0">
+                                            <li data-target="#carousel-tableContent3" class="toggle_button"
+                                                data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-tableContent3" class="toggle_button"
+                                                data-slide-to="1"></li>
+                                            <li data-target="#carousel-tableContent3" class="toggle_button"
+                                                data-slide-to="2"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-item -->
+                        <div class="carousel-item">
+                            <div class="containerWapper">
+
+                                <div class="containerItem">
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Tạo Oxy Yuwell 9F-3AW.png" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Tạo Oxy Yuwell 9F-3AW</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>650,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Tạo Oxy Yuwell 8F-3AW.jpg" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Tạo Oxy Yuwell 8F-3AW</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>350,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="transition_button">
+                                        <ol class="carousel-indicators m-0">
+                                            <li data-target="#carousel-tableContent3" class="toggle_button"
+                                                data-slide-to="0"></li>
+                                            <li data-target="#carousel-tableContent3" class="toggle_button active"
+                                                data-slide-to="1"></li>
+                                            <li data-target="#carousel-tableContent3" class="toggle_button"
+                                                data-slide-to="2"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-item -->
+                        <div class="carousel-item">
+                            <div class="containerWapper">
+
+                                <div class="containerItem">
+
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Tạo Oxy Yuwell 7F-3NW.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Tạo Oxy Yuwell 7F-3NW</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>452,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy tạo oxy 9F-3BW.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy tạo oxy 9F-3BW</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>850,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="transition_button">
+                                        <ol class="carousel-indicators m-0">
+                                            <li data-target="#carousel-tableContent3" class="toggle_button"
+                                                data-slide-to="0"></li>
+                                            <li data-target="#carousel-tableContent3" class="toggle_button"
+                                                data-slide-to="1"></li>
+                                            <li data-target="#carousel-tableContent3" class="toggle_button active"
+                                                data-slide-to="2"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- item_wrapper4 -->
+            <div class="item_wrapper">
+                <div class="header">
+                    <div class="title">Máy xông không khí</div>
+                    <div class="watchAll">
+                        <a href="../DanhMuc/MayXongKhongKhi/index.html">
+                            <button>Xem tất cả »</button>
+                        </a>
+                    </div>
+                </div>
+                <div id="carousel-tableContent4" class="carousel slide">
+                    <div class="carousel-inner" role="listbox">
+                        <!-- carousel-item -->
+                        <div class="carousel-item active">
+                            <div class="containerWapper">
+                                <div class="containerItem">
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Xông Khí Dung Cầm Tay M102 ( Dạng Lưới ).webp"
+                                                    alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Xông Khí Dung Cầm Tay M102</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>1,050,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Xông Khí Dung Nén Khí 403T.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Xông Khí Dung Nén Khí 403T</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>556,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="footer">
+                                    <div class="transition_button">
+                                        <ol class="carousel-indicators m-0">
+                                            <li data-target="#carousel-tableContent4" class="toggle_button"
+                                                data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-tableContent4" class="toggle_button"
+                                                data-slide-to="1"></li>
+                                            <li data-target="#carousel-tableContent4" class="toggle_button"
+                                                data-slide-to="2"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-item -->
+                        <div class="carousel-item">
+                            <div class="containerWapper">
+
+                                <div class="containerItem">
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Xông Khí Dung Nén Khí 405B.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Xông Khí Dung Nén Khí 405B</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>560,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Xông Khí Dung Siêu Âm 402B.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Xông Khí Dung Siêu Âm 402B</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>750,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="transition_button">
+                                        <ol class="carousel-indicators m-0">
+                                            <li data-target="#carousel-tableContent4" class="toggle_button"
+                                                data-slide-to="0"></li>
+                                            <li data-target="#carousel-tableContent4" class="toggle_button active"
+                                                data-slide-to="1"></li>
+                                            <li data-target="#carousel-tableContent4" class="toggle_button"
+                                                data-slide-to="2"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carousel-item -->
+                        <div class="carousel-item">
+                            <div class="containerWapper">
+
+                                <div class="containerItem">
+
+
+                                    <div class="item sp1">
+                                        <div class="content">
+                                            <div class="img">
+                                                <img src="../../Img/Máy Xông Khí Dung Nén Khí 405B.webp" alt="">
+                                                <span><i style="font-size:small;"
+                                                        class="fa-solid fa-bag-shopping"></i></span>
+                                            </div>
+                                            <div class="title">
+                                                <p>Máy Xông Khí Dung Nén Khí 405B</p>
+                                            </div>
+                                            <div class="price">
+                                                <span>1,450,000₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="footer">
+                                    <div class="transition_button">
+                                        <ol class="carousel-indicators m-0">
+                                            <li data-target="#carousel-tableContent4" class="toggle_button"
+                                                data-slide-to="0"></li>
+                                            <li data-target="#carousel-tableContent4" class="toggle_button"
+                                                data-slide-to="1"></li>
+                                            <li data-target="#carousel-tableContent4" class="toggle_button active"
+                                                data-slide-to="2"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="mt-5"></footer>
+    <script src="../../Synthetic/Synthetic.js"></script>
+
+</body>
+
+</html>

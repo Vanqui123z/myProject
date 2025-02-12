@@ -1,0 +1,71 @@
+
+
+
+/* header */
+/* carousel */
+.carousel-inner {width: 100%;}
+
+.carousel-item {object-fit: cover;}
+
+.carousel-item img {    width: 100%;}
+
+.carousel-indicators-TableContent{
+    margin: 0;
+}
+.carousel-indicators-TableContent .active{
+    background-color: black;
+}
+.toggle_button {
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50%;
+    margin-right: 10px !important;
+}
+
+#carouselId {}
+#carouselId img{ object-fit: cover;}
+/* main */
+
+    /* .vocher */
+    .vochers {overflow: hidden; padding:10px;}
+    .vochers .title{ margin-bottom: 15px; border-left: 3px solid black; padding-left: 10px;}
+    .vochers .content{display: flex;justify-content: space-between;gap: 15px;flex-wrap: wrap;color: black; margin: 10px;}
+        .vocher {height: auto; width: 100%;display: flex;flex-wrap: nowrap;position: relative;       box-shadow: 1px 2px 5px rgb(173, 172, 172);border: 1px solid transparent; border-radius: 10px; border-left:5px dotted var(--primary-gray--color);}
+        .vocher span{font-weight: bold;color: black;}
+            .sign{flex: 1;display: flex; justify-content: center; align-items: center; }
+            .content_vorcher{flex: 2; border-left: 1px dashed var(--primary-gray--color); padding: 10px; overflow: hidden; }
+            .content_vorcher p{ font-size: 12px;}
+                .information{padding-right:10px; display: flex; justify-content: space-between; align-items: center;}
+                .information button{color: white;text-wrap: nowrap; height: fit-content; padding: 5px; width: fit-content;}
+
+    /* flashSale */
+    .flashSale{background-color: var(--primary-gray--color); padding: 15px; }
+        .flashSale_header{display: flex;justify-content: space-between; align-items: center;}
+        .flashSale_header .title{ display: flex;}
+        .flashSale_header .time{display: flex; text-align: center}
+        .flashSale_header .item{padding: 5px ; margin: 5px; background-color: white; border-radius: 5px; }
+        .flashSale_header .item span{color: black;}
+
+
+
+
+    /* allProduct */
+    .allProduct .header{margin: 15px  0;display: flex; align-items: center;}
+    .allProduct .header button{position:relative; margin: 15px 20px 15px 0; color: var(--primary-black--color); background-color: var(--primary-white--color); text-wrap: nowrap; width: fit-content;}
+    .allProduct .header .active{background-color:var(--primary-black--color); color: white;}
+    .item img{height:200px; object-fit: cover}
+    .allProduct .container .item .img::before{ content: "Hàng mới"; color: black; background-color:var(--primary-yellow--color) ;position: absolute; top: 5px; right: 5px; border-radius: 5px; padding: 2px;}
+    .allProduct .container .item{ font-size: small; border:1px solid rgb(191, 191, 191,0.5);}                 
+                                .price span{color: black; font-weight: bold;}
+
+
+    /* tableContent */
+    .tableContent{ display: grid; grid-template-columns:repeat(2,49%); grid-template-rows: repeat(4,auto); gap:2%;}
+    .tableContent .header{display: flex; justify-content: space-between; align-items: center; ; padding:10px 10px 0 10px; background:var(--primary-gray--color);min-height:70px;}
+    .tableContent .header .title{border-left:3px solid black; padding-left:5px;}
+    .tableContent .header .watchAll{width: auto;}
+    .tableContent .header .watchAll button{margin: 0;}
+    .tableContent .containerWapper{background-color: var(--primary-gray--color);padding:10px;}
+    .tableContent .item .title{height:50px;overflow: hidden;}
+                                .containerItem{display: grid; grid-template-columns: repeat(2,auto);gap:15px; padding:10px;}
+

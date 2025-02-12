@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Boostrap_Jquery/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Synthetic/Synthetic.css">
+    <script src="../../Boostrap_Jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../Boostrap_Jquery/bootstrap.min.js"></script>
+    <script src="../../Synthetic/Synthetic.js"></script>
+
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        [class=col] {
+            margin: 0;
+            padding: 0;
+        }
+
+        [class=row] {
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+   <header id="headerPM"></header>
+    <main>
+        <h1 class="text-center w-100 mb-5">Đăng kí</h1>
+        <div class="d-flex justify-content-center row">
+            <form action="" class="col-lg-4 col-sm-12" >
+                <div class="form-group">
+                    <label for="name">Họ tên</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Nhập họ tên"
+                        aria-describedby="helpIdName" required>
+                    <small id="helpIdName" class="text-danger"></small>
+                </div>
+                    <div class="form-group">
+                    <label for="sdt">SDT</label>
+                    <input type="number" name="sdt" id="sdt" class="form-control" placeholder="Nhập SDT"
+                        aria-describedby="helpIdSDT" required>
+                    <small id="helpIdSDT" class="text-danger"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Nhập email"
+                        aria-describedby="helpIdEmail" required>
+                    <small id="helpIdEmail" class="text-danger"></small>
+                </div>
+            
+            </form>
+            <form action="" class="col-lg-4 col-sm-12">
+                <div class="form-group">
+                    <label for="birthday">Ngày sinh</label>
+                    <input type="date" name="birthday" id="birthday" class="form-control" placeholder=""
+                        aria-describedby="helpIdBirthday" required>
+                    <small id="helpIdBirthday" class="text-danger"></small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="password"
+                        aria-describedby="helpIdPassword" required>
+                    <small id="helpIdPassword" class="text-danger"></small>
+                </div>
+                <div class="form-group">
+                    <label for="passwordAgain">Nhập lại mật khẩu</label>
+                    <input type="password" name="passwordAgain" id="passwordAgain" class="form-control"
+                        placeholder="Nhập SDT" aria-describedby="helpIdPasswordAgain" required>
+                    <small id="helpIdPasswordAgain" class="text-danger"></small>
+                </div>
+            </form>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary mt-3 btnSubmit" type="submit">Đăng kí</button>
+        </div>
+    </main>
+    <footer id="footer" class="mt-5"></footer>
+
+</body>
+
+
+
+</html>
