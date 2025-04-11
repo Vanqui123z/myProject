@@ -1,4 +1,4 @@
-package employeemanager;
+package employeeManager;
 
 import java.beans.Statement;
 import java.sql.Connection;

@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
-package employeemanager;
+package employeeManager;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;

@@ -1,4 +1,4 @@
-package employeemanager;
+package employeeManager;
 
 public class Employee {
     private String Name;
