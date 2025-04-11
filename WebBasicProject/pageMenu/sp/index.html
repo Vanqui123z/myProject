@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Boostrap_Jquery/bootstrap.min.css">
+    <link rel="stylesheet" href="../sp/index.css">
+    <link rel="stylesheet" href="../../Synthetic/Synthetic.css">
+    
+    <script src="../../Boostrap_Jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../Boostrap_Jquery/bootstrap.min.js"></script>
+    <script src="../../Synthetic/Synthetic.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        [class=col] {
+            margin: 0;
+            padding: 0;
+        }
+
+        [class=row] {
+            margin: 0;
+            padding: 0;
+
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <header id="header"></header>
+
+    <main>
+        <div class="row  containers">
+            <div class="col-lg-6 col-sm-12 imgSP">
+                <div class="imgSP_container">
+                    <div id="carouselId" class="carousel slide" data-ride="carousel">
+
+                        <div style=" width:100%; " class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img  src="../../Img/Máy Tạo Oxy Yuwell 8F-3AW.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../Img/Máy Tạo Oxy Yuwell 9F-3AW.png" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../Img/Máy tạo oxy 9F-3BW.webp" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../Img/Máy Tạo Oxy Yuwell 7F-3NW.webp" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../Img/Máy Tạo Oxy Yuwell 7F-3NW.webp" alt="First slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev " href="#carouselId" role="button" data-slide="prev">
+                            <span class=" iconControl" style="height: 50px; width: 50px;"  aria-hidden="true">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+    
+                        </a>
+                        <a class="carousel-control-next " href="#carouselId" role="button" data-slide="next">
+                            <span class=" iconControl" style="height: 50px; width: 50px;"  aria-hidden="true">
+                                <i class="fa-solid fa-chevron-right"></i>
+    
+                            </span>
+                        </a>
+                    </div>
+    
+                    <div class="listImg row p-3">
+                        <div class="col-lg-2 col-sm-4 imgContainer" data-target="#carouselId" data-slide-to="0"
+                            class="active">
+                            <img src="../../Img/Máy tạo oxy 9F-3BW.webp" alt="">
+                        </div>
+                        <div class="col-lg-2 col-sm-4 imgContainer" data-target="#carouselId" data-slide-to="1">
+                            <img src="../../Img/Máy tạo oxy 9F-3BW.webp" alt="">
+                        </div>
+                        <div class="col-lg-2 col-sm-4 imgContainer" data-target="#carouselId" data-slide-to="2">
+                            <img src="../../Img/Máy tạo oxy 9F-3BW.webp" alt="">
+                        </div>
+                        <div class="col-lg-2 col-sm-4 imgContainer" data-target="#carouselId" data-slide-to="3">
+                            <img src="../../Img/Máy tạo oxy 9F-3BW.webp" alt="">
+                        </div>
+                        <div class="col-lg-2 col-sm-4 imgContainer" data-target="#carouselId" data-slide-to="4">
+                            <img src="../../Img/Máy tạo oxy 9F-3BW.webp" alt="">
+                        </div>
+                        <div class="col-lg-2 col-sm-4 imgContainer" data-target="#carouselId" data-slide-to="5">
+                            <img src="../../Img/Máy tạo oxy 9F-3BW.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+
+            <div class="col-lg-6 col-sm-12 information">
+                <div class="wrapper p-4">
+                    <h4>Máy Tạo Oxy Yuwell 7F-3NW</h4>
+                    <div class="sectors">
+                        <span>Loại:</span> <b>Áo Khoác</b>
+                        <span>|</span>
+                        <span>MSP:</span> <b>AKID0164-01</b>
+                    </div>
+                    <h3>550,000₫</h3>
+                    <p>Mã giảm giá bạn có thể sử dụng:</p>
+                        <div class="vochers row">
+                            <div class="vocher">
+                                <span id="nameVorcher">W10</span>
+                            </div>
+                            <div class="vocher">
+                                <span id="nameVorcher">W20</span>
+                            </div> <div class="vocher">
+                                <span id="nameVorcher">W30</span>
+                            </div> <div class="vocher">
+                                <span id="nameVorcher">W40</span>
+                            </div>
+                        </div>
+                       <div class="color">
+                        <span>Màu Sắc :</span><b>Xanh Đen</b>
+                       </div>
+                       <div class="size">
+                            <div class="title">
+                                <span>Kích thước</span>
+                            </div>
+                            <div class="content row" id="selects">
+                                <button style="border-radius: 0;" onclick="toggleOpacity(this)" class="select" ><span>Small</span></button>
+                                <button style="border-radius: 0;" onclick="toggleOpacity(this)" class="select"><span>Big</span></button>
+    
+                            </div>
+                       </div>
+                       <div class="option row">
+                        <div class="button_number col">
+                            <button class="btn add">+</button>
+                            <button class="number">1</button>
+                            <button class="btn sub">-</button>
+                        </div>
+                        <button class="btn btn-dark col text-nowrap" id="addToCart"><a class="nav-link text-white" href="../../permenent/cart/index.html">Thêm vào giỏ</a></button>
+                        <button class="btn btn-light col"><a class="nav-link" href="../../permenent/signIn/index.html">Mua ngay</a></button>
+                       </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer id="footer" class="mt-5"></footer>
+
+    
+<script src="index.js">
+    
+</script>
+    
+</body>
+
+</html>

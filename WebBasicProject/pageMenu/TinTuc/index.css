@@ -1,0 +1,25 @@
+main .container {
+    display: block;
+}
+main h5{border-left:3px solid black ; margin-bottom:20px; padding:5px;}
+
+.card-title {
+    min-height: 13vh;
+    max-height: 13vh;
+    overflow: hidden;
+}
+
+.card-body p{
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+   height: 72px;
+}
+
+main img {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+}
+.card_img{ margin-bottom: 10px;}
