@@ -1,30 +1,26 @@
 $(document).ready(function () {
+    // Xóa sản phẩm
     $(".btnDeleteSp").click(function () {
-        $(this).parent().remove()
-
+        $(this).parent().remove();
     });
 
-    // +-sp
+    // Tăng số lượng
     $(".add").click(function () {
-        var number =$(this).parent().find(".number")
-        var currentValue =parseInt(number.text())
-        currentValue= currentValue+1;
-        ($(this).parent().find(".number").text(currentValue));
-
+        const number = $(this).siblings(".number");
+        let currentValue = parseInt(number.text());
+        number.text(currentValue + 1);
     });
 
+    // Giảm số lượng
     $(".sub").click(function () {
-        var number =$(this).parent().find(".number")
-        var currentValue =parseInt(number.text())
+        const number = $(this).siblings(".number");
+        let currentValue = parseInt(number.text());
         if (currentValue > 1) {
-            currentValue= currentValue-1;
-            ($(this).parent().find(".number").text(currentValue));
-
+            number.text(currentValue - 1);
         }
     });
+});
 
-})
-   
 /*
 // thêm header và footer vào từng trang web
 */
